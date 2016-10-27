@@ -1,0 +1,10 @@
+#Script specifications to clean the data got from the Idealista API.
+
+- Remove the header that appears every 50 rows approx
+- Remove useless features: 'operation', 'address','country','distance','tenantGender','tenantNumber','isSmokingAllowed'
+- 'floor' feature: change the text values to the appropiate number
+- convert some features to float: 'price','priceByArea','numPhotos','size','propertyCode','rooms','floor'
+- hot encoding for the features: exterior, ShowAdress,hasVideo,newDevelopment,hasLift
+- Studies NaN Cleaning
+
+- Historic data handling: First import date, Last Modification date, Last Desactivation Date, Status
