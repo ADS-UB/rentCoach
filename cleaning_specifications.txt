@@ -1,10 +1,26 @@
 #Script specifications to clean the data got from the Idealista API.
 
 - Remove the header that appears every 50 rows approx
-- Remove useless features: 'operation', 'address','country','distance','tenantGender','tenantNumber','isSmokingAllowed'
+- Remove useless features: 'operation','address','country','distance','tenantGender','tenantNumber','isSmokingAllowed'
 - 'floor' feature: change the text values to the appropiate number
 - convert some features to float: 'price','priceByArea','numPhotos','size','propertyCode','rooms','floor'
-- hot encoding for the features: exterior,ShowAdress,hasVideo,newDevelopment,hasLift
+- dummy encoding for the features: exterior,ShowAdress,hasVideo,newDevelopment,hasLift
 - Studies NaN Cleaning
 
 - Historic data handling: First import date, Last Modification date, Last Desactivation Date, Status
+
+
+- Questions:
+
+1. 1410 flats over 5350 flats are without floor number. What do we do with them?
+
+2. municipality/district/neighborhood tree:
+	- 466 flats without district (and so without neighborhood neither)
+	- 1158 flats without neighborhood (over the total of flats)
+
+	Solution: in our model we will consider only flats from the Barcelona municipality, and all of them have district and neighborhood.
+	Let's modify the API query to get flats only from the Barcelona municipality.
+
+3. Categorical encoding of propertyType, district and neighborhood in this first "data cleaning step" or later?
+	
+
