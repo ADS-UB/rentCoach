@@ -1,7 +1,3 @@
-# enable debugging
-import cgitb
-cgitb.enable()
-
 import pandas as pd
 import numpy as np
 
