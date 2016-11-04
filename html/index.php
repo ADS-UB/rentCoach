@@ -93,7 +93,12 @@ include ("connections/connect.php");
 				    for($i=0; $i<$num_ubicacion; $i++) {
 				    	$res_ubicacion = mysqli_fetch_array($consulta_ubicacion);
 				    	?>
+<<<<<<< HEAD
 				    	<option value='<?php echo $res_ubicacion['neighborhood']; ?>'<php echo $res_ubicacion['neighborhood']; ?></option>
+=======
+				    	<option value = "<?php echo $res_ubicacion['neighborhood']; ?>" ><?php echo ($res_ubicacion['neighborhood']) ?></option>
+				    	
+>>>>>>> master
 				    	<?php
 				    }
 				    ?>
