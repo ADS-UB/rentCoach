@@ -1,0 +1,19 @@
+rooms: numeric
+bathrooms: numeric
+exterior: binary
+hasLift: binary
+size: numeric
+floor: numeric
+adress: string
+CP: numeric
+hasParkingSpace': binary
+isParkingSpaceIncludedInPrice': binary 
+priceperarea': not necessary
+type: [u'type_chalet',
+       u'type_chalet_independantHouse', u'type_chalet_semidetachedHouse',
+       u'type_chalet_terracedHouse', u'type_flat', u'type_flat_duplex',
+       u'type_flat_penthouse', u'type_flat_studio']
+status: [u'good', u'newdevelopment', u'renew']
+district: [u'Ciutat Vella', u'Eixample', u'Gràcia', u'Horta Guinardó',
+       u'Les Corts', u'Nou Barris', u'Sant Andreu', u'Sant Martí',
+       u'Sants-Montjuïc', u'Sarrià-Sant Gervasi']
